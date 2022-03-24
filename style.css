@@ -2,51 +2,155 @@
     width: 100px;
     height: 100px;
     border: 1px solid #ff0000;
-    animation-name: full;
-    animation-duration: 4s;
+    transition: 2s;
 }
 /*ANIMAZIOE EX-1-SQUARE*/
-@keyframes full {
-    0% {width: 0px; height: 0px;}
-    50% {width: 50px; height: 50px;}
-    100% {width: 100px; height: 100px;}
+.ex-1-square:hover {
+    background-color: #ff0000;
 }
+/* FINE ANIMAZIOE EX-1-SQUARE*/
 
 .ex-2-square {
     width: 100px;
     height: 100px;
     background: red;
+    transition: 2s;
 }
+/*ANIMAZIONE EX-2-SQUARE*/
+.ex-2-square:active {
+    width: 300px;
+}
+/*FINE ANIMAZIONE EX-SQUARE-2*/
+
 .ex-3-square {
     width: 100px;
     height: 100px;
     background: red;
+    transition: 2s;
 }
+/*ANIMAZIONE EX-SQUARE-3*/
+.ex-3-square:hover {
+    border-radius: 50%;
+}
+/*FINE ANIMAZIONE EX-SQUARE-3*/
+
 .ex-4-square {
     width: 100px;
     height: 100px;
     background: red;
+    transition: 2s;
 }
+/*ANIMAZIONE EX-SQUARE-4*/
+.ex-4-square:hover{
+    opacity: 0;
+}
+/*FINE ANIMAZIONE EX-SQUARE-4*/
+
 .ex-5-square {
     margin: 20px;
     width: 60px;
     height: 60px;
     background: red;
 }
+/*ANIMAZIONE EX-SQUARE-5*/
+.ex-5-square:hover{ 
+    width: 80px;
+    height: 80px;
+}
+
+.ex-5-square:active{ 
+    width: 40px;
+    height: 40px;
+}
+/*FINE ANIMAZIONE EX-SQUARE-5*/
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
 }
+/*ANIMAZIONE Ex-img-6*/
+.ex-6-img:hover{ 
+    -webkit-filter: grayscale(100%);
+}
+/*FINE ANIMAZIONE Ex-img-6*/
+
+/*ANIMAZIONE Ex-img-7*/
+.ex-7-img:hover{ 
+    filter: grayscale(.7);
+    filter: sepia(.5);
+}
+
+.ex-7-img{ 
+    transition: 2s;
+}
+/*FINE ANIMAZIONE Ex-img-7*/
+
+/*ANIMAZIONE Ex-img-8*/
+.ex-8-img:hover{ 
+    filter: grayscale(.7);
+    filter: sepia(.5);
+    border-radius: 10px;
+}
+
+.ex-8-img{ 
+    transition: 2s;
+}
+/*FINE ANIMAZIONE Ex-img-8*/
 
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
 }
+/*ANIMAZIONE Ex-img-9*/
+.ex-9-img:hover{ 
+    filter: grayscale(.7);
+    filter: sepia(.5);
+    border-radius: 10px;
+    width: 200px;
+}
+
+.ex-9-img{ 
+    transition: 2s;
+}
+/*FINE ANIMAZIONE Ex-img-9*/
+
 .ex-10-icon {
     font-size: 60px;
+    animation: roll 2s linear infinite;
 }
+/*ANIMAZIONE EX-10-ICON*/
+@keyframes roll { 
+    0% { 
+       transform: rotate(0deg) 
+    }
+
+    100% { 
+        transform: rotate(360deg) 
+    }
+}
+/*FINE ANIMAZIONE EX-10-ICON*/
+
 .ex-11-icon {
     font-size: 60px;
+    animation: roll-fast 2s ease-out infinite;
 }
+/*ANIMAZIONE EX-11-ICON*/
+@keyframes roll-fast { 
+    0% { 
+       transform: rotate(0deg) 
+    }
+
+    90% { 
+        transform: rotate(360deg) 
+    }
+
+    100% { 
+        transform: rotate(0deg) 
+     }
+}
+/*FINE ANIMAZIONE EX-11-ICON*/
+
+/*---------------
+--- FINE ESERCIZIO ---*/
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
@@ -67,6 +171,7 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+    animation: surf 4s linear infinite;
 }
 .ex-12-bottom-white, .ex-13-bottom-white {
     position: absolute;
